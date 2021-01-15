@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>My website</title>
+  </head>
+
+  <body>
+    {{>navbar}}
+
+    <div class="container-fluid mt-5 py-4">
+      <div class="row">
+        <div class="col-md-10 col-12 mx-auto">
+          <div class="row">
+
+            {{!-- left side --}}
+            <div
+              class="col-md-6 cl-12 hero_text order-md-0 order-1 d-flex justify-content-center align-items-start flex-column">
+              <h1>WE WILL HELP YOU TO</h1>
+              <h1>GROW YOUR BUSINESS</h1>
+              <P>We Are The Team Of <span class="bold-style">Professional Developer</span></P>
+              <button class="btn-style btn-primary">Read More</button>
+            </div>
+
+            {{!-- right side --}}
+            <div class="col-md-6 cl-12 hero_text order-md-1 order-0">
+              <figure>
+                <img class="growthsvg" src="images/growth.svg" alt="image">
+              </figure>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    {{!-- about start --}}
+    {{>about}}
+    {{!-- about end --}}
+
+    {{!-- service start --}}
+    {{>service}}
+    {{!-- service end --}}
+    {{!-- map start --}}
+    {{>map}}
+    {{!-- map end --}}
+
+    {{!-- contact start --}}
+    {{>contact}}
+    {{!-- contact end --}}
+
+    <script src="../jq/jquery.js"></script>
+    <script src="../js/bootstrap.js"></script>
+  </body>
+
+</html>
